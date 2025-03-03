@@ -90,25 +90,35 @@
                     </div>
                     <div class="mb-3">
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
-                        placeholder="Email Address"
+                        placeholder="Pickup Location"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Destination"
+                        required
                       />
                     </div>
                     <div class="mb-3">
                       <select class="form-select">
                         <option selected>Select Service Type</option>
-                        <option>City Tour</option>
-                        <option>Airport Transfer</option>
-                        <option>Custom Trip</option>
+                        <option>Outstation</option>
+                        <option>Airport</option>
+                        <option>Local</option>
                       </select>
                     </div>
                     <div class="mb-3">
-                      <textarea
+                      <input
+                        type="date"
                         class="form-control"
-                        rows="3"
-                        placeholder="Your Message"
-                      ></textarea>
+                        placeholder="Select Date"
+                        required
+                        />
                     </div>
                     <button
                       type="submit"
