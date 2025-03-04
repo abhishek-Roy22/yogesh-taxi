@@ -21,6 +21,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Yogesh-Travel-Raipur</title>
+
     <!-- Css Link -->
     <link rel="stylesheet" href="style.css" />
 
@@ -30,13 +37,18 @@
     <!-- Navbar -->
     <nav class="navbar bg-white shadow-lg position-sticky top-0">
       <div class="container">
-        <a class="navbar-brand text-dark fw-bold logo" href="#"
-          >Yogesh-Travel</a
-        >
+        <a class="navbar-brand text-dark fw-bold logo" href="#">
+          Luxury Tax!
+        </a>
 
         <div class="d-flex align-items-center gap-2">
-          <button class="btn btn-outline-dark">Call Now</button>
-          <button class="btn primary-btn text-white">WhatsApp Now</button>
+          <a href="tel:+91-6264404500" class="text-decoration-none"
+            >+91-6264404500</a
+          >
+          <a href="tel:+91-6264404500" class="text-decoration-none">
+            <button class="btn btn-outline-dark">Call Now</button>
+          </a>
+          <button class="btn secondary-btn text-white">WhatsApp Now</button>
         </div>
       </div>
     </nav>
@@ -48,15 +60,24 @@
             <!-- Content Column -->
             <div class="col-lg-7 mb-4 mb-lg-0">
               <h1 class="display-4 fw-bold mb-4 text-light">
-                Explore Raipur with Us
+                Explore Raipur and All Over India with Us
               </h1>
               <p class="lead mb-4 text-light">
                 Experience the best travel services in Raipur. We provide
                 comfortable rides, tour packages, and personalized travel
                 solutions for all your needs.
               </p>
+              <p class="lead mb-4 text-light">
+                Discover the most reliable cab services in Raipur. We offer
+                comfortable rides, affordable rates, and professional drivers to
+                ensure a smooth and safe journey.
+              </p>
               <div class="d-flex gap-3">
-                <button class="btn btn-outline-light btn-lg rounded-pill">
+                <button
+                  class="btn btn-outline-light btn-lg rounded-pill"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
                   Book Now
                 </button>
               </div>
@@ -138,7 +159,7 @@
       <section class="features py-5">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="fw-bold">Why Choose Us?</h2>
+            <h2 class="fw-bold primary-color">Why Choose Us?</h2>
             <p class="text-muted">
               We provide the best travel experience in Raipur
             </p>
@@ -163,7 +184,7 @@
                       />
                     </svg>
                   </div>
-                  <h4>Comfortable Vehicles</h4>
+                  <h4 class="primary-color">Comfortable Vehicles</h4>
                   <p class="text-muted">
                     Well-maintained and comfortable vehicles for your journey
                   </p>
@@ -189,7 +210,7 @@
                       />
                     </svg>
                   </div>
-                  <h4>24/7 Service</h4>
+                  <h4 class="primary-color">24/7 Service</h4>
                   <p class="text-muted">
                     Available round the clock for your travel needs
                   </p>
@@ -216,7 +237,7 @@
                       />
                     </svg>
                   </div>
-                  <h4>Safe & Reliable</h4>
+                  <h4 class="primary-color">Safe & Reliable</h4>
                   <p class="text-muted">
                     Professional drivers and secure travel experience
                   </p>
@@ -300,7 +321,11 @@
                   <span>Competitive and transparent pricing</span>
                 </div>
               </div>
-              <button class="btn primary-btn text-white px-4 py-2 mt-4">
+              <button
+                class="btn primary-btn text-white px-4 py-2 mt-4"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+              >
                 Book Now
               </button>
             </div>
@@ -393,7 +418,11 @@
                     <span>Customized travel packages available</span>
                   </div>
                 </div>
-                <button class="btn primary-btn text-white px-4 py-2">
+                <button
+                  class="btn primary-btn text-white px-4 py-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
                   Book Your Luxury Ride
                 </button>
               </div>
@@ -401,7 +430,197 @@
           </div>
         </div>
       </section>
+
+      <!-- Services Section -->
+      <section class="services py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h6
+              class="text-white fw-bold badge py-2 px-3 rounded-pill bg-primary"
+            >
+              OUR SERVICES
+            </h6>
+            <h2 class="fw-bold mt-3 primary-color">Choose Your Journey Type</h2>
+            <p class="text-muted">
+              Select the perfect travel option that suits your needs
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- One Way Trip -->
+            <div class="col-lg-6">
+              <div class="service-card h-100">
+                <div class="card border-0 shadow-lg">
+                  <div class="card-body p-4">
+                    <div class="service-icon mb-4">
+                      <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="card-title mb-3">One Way Trip</h3>
+                    <p class="card-text text-muted mb-4">
+                      Perfect for single destination journeys. Travel
+                      comfortably to your destination with our professional
+                      service.
+                    </p>
+                    <ul class="service-features mb-4">
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        No return fare charges
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        Flexible pickup timing
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        Multiple vehicle options
+                      </li>
+                    </ul>
+                    <button
+                      class="btn primary-btn text-white w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bookingModal"
+                    >
+                      Book One Way
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Round Trip -->
+            <div class="col-lg-6">
+              <div class="service-card h-100">
+                <div class="card border-0 shadow-lg">
+                  <div class="card-body p-4">
+                    <div class="service-icon mb-4">
+                      <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="card-title mb-3">Round Trip</h3>
+                    <p class="card-text text-muted mb-4">
+                      Ideal for return journeys. Book a round trip and enjoy the
+                      convenience of a dedicated vehicle throughout your
+                      journey.
+                    </p>
+                    <ul class="service-features mb-4">
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        Cost-effective pricing
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        Same driver throughout
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle text-primary"></i>
+                        Flexible waiting time
+                      </li>
+                    </ul>
+                    <button
+                      class="btn primary-btn text-white w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bookingModal"
+                    >
+                      Book Round Trip
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Booking Modal -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row g-0">
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="./images/car-rent.png"
+                  alt="Hair Transformation"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-md-6 p-4">
+                <h2
+                  class="fw-semibold mb-3 text-center border-bottom border-primary border-2 rounded"
+                >
+                  Book Your Cab Now
+                </h2>
+                <form id="appointmentForm">
+                  <div class="mb-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Pickup Location*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Destination*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <select class="form-select" required>
+                      <option value="" selected disabled>
+                        Select Service Type
+                      </option>
+                      <option value="Outstation">Outstation</option>
+                      <option value="Airport">Airport</option>
+                      <option value="Local">Local</option>
+                    </select>
+                  </div>
+                  <div class="mb-2">
+                    <input type="date" class="form-control" required />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary primary-btn w-100 mb-3"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer pt-5">
